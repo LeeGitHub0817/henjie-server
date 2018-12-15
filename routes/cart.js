@@ -128,8 +128,7 @@ cartRouter.get("/update", (res, req)=>{
     var count = req.query.count;
     sql = "UPDATE mf_cart_detail SET count=? WHERE did=? AND productId=?";
     pool.query(sql, [did, pid, count], (err, result)=>{
-        console.log(err);
-        
+        console.log(err); 
     });
 });
 
